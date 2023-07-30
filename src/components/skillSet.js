@@ -30,7 +30,7 @@ export function MySkillSet({ ArrowForwardIosIcon }) {
 
                         </div>
                     </div>
-                    <div style={{ width: '60%', paddingTop: '20px', zIndex: '10', paddingLeft: '15px' }}>
+                    <div style={{ width: '80%', paddingTop: '20px', zIndex: '10', paddingLeft: '15px' }}>
 
                         A caffeine-addicted React Web Developer, proficient in C++, Java, JavaScript, Express framework, web sockets, and Python. My passion for React drives them to craft captivating web applications, while their versatile skills tackle any challenge with ease. Get ready for a caffeinated coding journey like no other, as they revolutionize web development with every line of code.
                     </div>
@@ -39,6 +39,7 @@ export function MySkillSet({ ArrowForwardIosIcon }) {
                     <img className="coffeImg" src={require('./images/Gif.gif')}  ></img>
 
                 </div>
+                <div style={{border: '4px solid white' , marginRight:'100px'}}></div>
                 <div className="callSkillCards">
                     <div className='flexRows'>
                         <SkillCards skillName={'C++'} />

@@ -4,11 +4,37 @@ import Todo from './images/todo.png'
 import Rictionary from './images/rictionary.png'
 import Chat from './images/chatRooms.png'
 
-function Description(){
-    return(
+function Description() {
+    return (
         <div className='descriptions'>
+            <div style={{ marginTop:'38px', display:'flex',justifyContent:'center', alignItems:'center' , float: 'left', color:'white' , fontSize:'50px', fontFamily:'JetBrains Mono', color:'green' }}>readMe.md</div>
 
+            <div className='descriptions-text'>
+
+                <div style={{ paddingTop: '150px' }}>
+                    <hr></hr>
+                    Apart from these webapps I have also created many other small applications like
+                    <div style={{ paddingTop: '15px', fontWeight: '400' }}>
+                        TicTakToe game which stores history of moves in react
+                    </div>
+
+                    <div style={{ paddingTop: '15px', fontWeight: '400' }}>
+                        E-Com website that takes data from an API using react
+                    </div>
+                    <div style={{ paddingTop: '15px', fontWeight: '400' }}>
+                        Asset management system using react
+                    </div>
+                    <div style={{ paddingTop: '15px', fontWeight: '400' }}>
+                        I have worked on AI ML projects too
+                    </div>
+                    <div style={{ paddingTop: '15px', fontWeight: '400' }}>
+                    Also a React-based calculator with an elegant user interface.
+                    </div>
+                </div>
+
+            </div>
         </div>
+
 
     )
 }
@@ -48,7 +74,7 @@ export function PreviousWorks({ ArrowForwardIosIcon }) {
                             Hover to Know More
                         </div>
                     </div>
-                    <div style={{position:'absolute', left:'6%', bottom:'1%'}}>
+                    <div style={{ position: 'absolute', left: '6%', bottom: '1%' }}>
 
                         <div style={{ display: 'flex', gap: '40px' }}>
 
@@ -70,12 +96,12 @@ export function PreviousWorks({ ArrowForwardIosIcon }) {
                         </div>
                     </div>
                 </div>
-                
-            </div>
-            <div style={{float:'right',position:'absolute', right:'10%', top:'20%'}}>
 
-                    <Description/>
-                </div>
+            </div>
+            <div style={{ float: 'right', position: 'absolute', right: '10%', top: '20%' }}>
+
+                <Description />
+            </div>
             <ArrowForwardIosIcon className='arrow' fontSize='large' onClick={() => navigate('/contactMe')} style={{ float: "right" }} />
 
 

@@ -28,30 +28,31 @@ export function IntroSection({ ArrowForwardIosIcon }) {
     return (
         <div style={{ display: 'flex', justifyContent: 'space-between', overflow: 'hidden', justifyContent: 'space-between', marginTop: '21px' }}>
             <ArrowForwardIosIcon className='arrow' fontSize='large' style={{ float: "left", transform: "rotate(180deg)" }} onClick={() => navigate("/contactMe")} />
-        <div className='aboutMe'>
-            <div>
+            <div className='aboutMe'>
+                <div>
+            
 
-                <h1 ref={textRef}>SHREYANSH SHARMA</h1>
+                    <h1 ref={textRef}>SHREYANSH SHARMA</h1>
 
-                <p ref={subText}>Web Developer</p>
+                    <p ref={subText}>Web Developer</p>
 
-                <img ref={imgRef} className='coderImage' src={require('./images/WebDeveloper.png')}  ></img>
+                    <img ref={imgRef} className='coderImage' src={require('./images/WebDeveloper.png')}  ></img>
+                </div>
+
+                <div ref={icons} className='socialIcons' >
+                    <a target="_blank" href='https://www.instagram.com/sharma.shreyansh88/' >
+                        <InstagramIcon color='primary' fontSize='large' />
+                    </a>
+                    < a target="_blank" href='https://www.linkedin.com/in/shreyansh-sharma-4244461bb/'>
+                        <LinkedInIcon color='primary' fontSize='large' />
+                    </a>
+                    <a target="_blank" href='https://github.com/shreyanshsharma88'>
+                        <GitHubIcon color='primary' fontSize='large' />
+                    </a>
+                </div>
+
             </div>
-
-            <div ref={icons} className='socialIcons' >
-                <a target="_blank" href='https://www.instagram.com/sharma.shreyansh88/' >
-                    <InstagramIcon color='primary' fontSize='large' />
-                </a>
-                < a target="_blank" href='https://www.linkedin.com/in/shreyansh-sharma-4244461bb/'>
-                    <LinkedInIcon color='primary' fontSize='large' />
-                </a>
-                <a target="_blank" href='https://github.com/shreyanshsharma88'>
-                    <GitHubIcon color='primary' fontSize='large' />
-                </a>
-            </div>
-
-        </div>
-           <ArrowForwardIosIcon className='arrow' fontSize='large' style={{ float: "right" }} onClick={() => navigate("/skills")} />
+            <ArrowForwardIosIcon className='arrow' fontSize='large' style={{ float: "right" }} onClick={() => navigate("/skills")} />
         </div>
     )
 
