@@ -1,38 +1,284 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@100&family=Yuji+Boku&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@300;500&family=Zeyada&display=swap');.App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body{
+  background-image:linear-gradient(to  right, rgb(43, 19, 99),rgb(123, 28, 132)) ;
 }
 
 .App-link {
   color: #61dafb;
 }
+.navBar{
+  justify-content: center;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
 
-@keyframes App-logo-spin {
+}
+
+.navBar h2{
+  font-family: Chela one;
+  font-weight: 300;
+  color: white;
+}
+
+.navBar Button{
+  /* padding: 10px; */
+  height: 50px;
+}
+
+.navBar:hover{
+  box-shadow: 10px 5px 20px rgb(212, 177, 231);
+  transition: box-shadow 0.3s ease-in;
+}
+.aboutMe{
+  text-align: center;
+  border: 0.5px solid rgb(238, 151, 238);
+border-radius: 20px;
+
+width: 90%;
+
+box-shadow: #a63e98 0px 5px 15px;
+
+
+}
+.aboutMe h1{
+  
+  color: white;
+  font-family: Ysabeau SC;
+  font-size: 50px;
+  letter-spacing: 10px;
+  font-weight:bolder;
+  color: #61dafb;
+}
+.aboutMe p{
+  font-weight: 600;
+  font-size: 25px;
+  font-family: Zeyada;
+  color: white;
+  
+}
+.aboutMe h3{
+  color: white;
+  font-family: poppins;
+  padding: 20px;
+  word-spacing: 2px;
+  letter-spacing: 3px;
+}
+.socialIcons{
+  
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.arrow{
+  color: white;
+  padding: 45px;
+  margin-top: 250px;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    box-shadow: 10px 5px 20px rgb(87, 100, 154);
+
+    opacity: 1;
+  }
+}
+.coderImage{
+  /* border:2.5px solid rgb(92, 117, 218); */
+  border-radius: 20px;
+  box-shadow: 5px 2px 6px rgb(87, 100, 154);
+
+
+}
+@keyframes waviy {
+  0%,40%,100% {
+    color: black;
+    transform: translateY(0)
+  }
+  20% {
+    color: aliceblue;
+    transform: translateY(-20px)
+  }
+  100%{
+    color: #61dafb;
+  }
+}
+
+@keyframes loading{
+  0%{
+    width: 30%;
+  }
+  100%{
+    width: 100%;
+    
+  }
+}
+
+.skillCards{
+  color: white;
+  font-size: 20px;
+  background-color: #ca8c5f;
+  height: 60px;
+  width: 200px;
+  border-radius: 15px;
+  box-shadow: 0 60px 80px rgba(0,0,0,0.60), 0 45px 26px rgba(132, 113, 241, 0.14);
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+}
+
+.introText{
+  background-color: #f4e0b8;
+
+  display: flex;
+  border-radius: 10px;
+  color: black;
+  font-family: poppins;
+  font-size: 25px;
+  font-weight:lighter;
+  border: 1px solid #f4e0b8;
+  height: 800px;
+  width: 90%;
+  box-shadow: #f4e0b8 0px 5px 15px;
+}
+
+.coffeImg{
+  
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 500px;
+  height: 300px;
+  width: 420px;
+  
+}
+
+.callSkillCards{
+  display:grid;
+  margin-right: 10px;
+  padding:10px;
+  margin-top: 50px;
+}
+.flexRows{
+  display: flex;
+  gap: 30px;
+}
+.skillSetContainer{
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+@keyframes slideInFromLeft {
+  0% {
+    /* transform: translateX(-100%); */
+    opacity: 0;
+  }
+  100% {
+    /* transform: translateX(0); */
+    opacity: 1;
+  }
+}
+.card{
+  /* box-shadow: #f5eddd 5px 2px 5px 5px; */
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+  height: 350px;
+  width: 400px;
+  background-color: transparent; 
+  background-size: cover; 
+  background-position: center;
+  border-radius: 20px;
+  
+  overflow: hidden;
+}
+.card img {
+  
+  height: 130%;
+  width: 100%;
+  object-fit: cover;
+}
+.textField {
+  opacity: 0;
+  color: white;
+  display: grid;
+  text-align: left;
+  bottom: -10%;
+  z-index: 10;
+  background-color: rgb(63, 68, 72);
+  border: 1px solid black;
+  transition: 0.3s;
+  transform: translateY(100%);
+  padding-left: 10px;
+  box-shadow:
+  inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+  0 0 0 2px rgb(255, 255, 255),
+  3em 3em 3em 130em rgba(0, 0, 0, 0.3);
+}
+
+
+.card:hover .textField {
+  opacity: 1;
+  transform: translateY(0%);
+}
+.card:hover .propImage{
+  transform: scale(1.5);
+}
+
+
+.previousWorks{
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapper {
+  padding: 20px;
+  
+  color: white;
+  font-size: 30px;
+  height: 10vh;
+  /*This part is important for centering*/
+  display: grid;
+  width: 50px;
+}
+
+.typing-demo {
+  position: absolute;
+  left: 20px;
+  width: 19ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 3em;
+}
+
+@keyframes typing {
   from {
-    transform: rotate(0deg);
+    width: 0
   }
-  to {
-    transform: rotate(360deg);
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
   }
+}
+.descriptions{
+  width: 500px;
+  height: 700px;
+  border: 1px solid white;
+  border-radius: 20px;
+
 }
